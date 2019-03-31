@@ -1,0 +1,58 @@
+Install Git:
+------------
+sudo apt-get update -y
+sudo apt-get install git -y
+
+Configure Git:
+--------------
+git config --global user.name "Deepak"
+git config --global user.email "abc@example.com"
+git config --global core.editor "vim"
+
+Git Basic Commands:
+-------------------
+mkdir demo
+cd demo
+git init
+git add .
+git status
+git commit -m "First Commit"
+git status
+git log
+git diff
+
+Case Study:
+------------
+ Create a local git repository and move the entire code base to it
+Move to your Source Code directory and initialize a git repo in that folder
+ls
+git init
+git add .
+git status
+git commit -m "Initial Commit"
+git log
+
+ Create a new branch for a new feature you want to add to the application
+git branch new-feature1
+git branch
+git checkout new-feature1
+git diff
+git add index.html
+git commit -m "Commit in new-feature1 branch"
+
+ Merge back the created branch with the master branch
+git checkout master
+git merge new-feature1
+
+ Create a remote repository
+Create an account on github.com
+Now create a repository
+git remote add origin https://github.com/<REPOSITORY URL>
+git log
+git push -u origin master
+ Push the local repository to companys remote repository
+Verify from the UI now
+
+
+
+git push origin master --allow-unrelated-histories

@@ -1,0 +1,202 @@
+    1  apt-get install -y git vim
+    2  git config --global core.editor "vim"
+    3  mkdir demo
+    4  git init
+    5  tocuh a
+    6  vim a
+    7  git add .
+    8  git commit -m "aaa"
+    9  git status
+   10  ls -ltr
+   11  ls -ltra
+   12  rm -rf .git
+   13  mv a demo
+   14  cd demo/
+   15  git init
+   16  git status
+   17  git add .
+   18  git commit -m "aaa"
+   19  git status
+   20  vim a
+   21  git status
+   22  git diff
+   23  git status
+   24  git add .
+   25  git status
+   26  vim a 
+   27  git status
+   28  git commit --amed
+   29  git commit --amend
+   30  git status
+   31  git tag -a v1 -m "version 1"
+   32  git tags
+   33  git status
+   34  git tag
+   35  git remote add origin https://github.com/trainingDemo/new.git
+   36  git push origin master
+   37  git pull
+   38  git pull origin master
+   39  git pull origin master --allow-unrelated-histories
+   40  git status
+   41  git add .
+   42  git commit --amend
+   43  git commit -m "aa"
+   44  git push origin master
+   45  clear
+   46  cd ..
+   47  ls -ltr
+   48  clear
+   49  lsb_release -a
+   50  clear
+   51  apt-get update -y
+   52  clear
+   53  apt-get update -y
+   54  apt-get install -y git
+   55  clear
+   56  git config --list
+   57  git config --global user.name "Deepak"
+   58  git config --global user.email "abc@example.com"
+   59  git config --list
+   60  git config --global core.editor vim
+   61  git config --list
+   62  apt-get install vim -y
+   63  clear
+   64  mkdir demo1
+   65  ls -ltr
+   66  cd demo1/
+   67  ls -ltr
+   68  ls -ltra
+   69  git init
+   70  ls -ltra
+   71  ls -ltra .git/
+   72  clear
+   73  echo "Hello from GIT" > file1.txt
+   74  ls -ltra
+   75  git status
+   76  git add file1.txt 
+   77  git status
+   78  clear
+   79  git commit -m "My First Commit"
+   80  git status
+   81  history 
+   82  echo "Hello from DEEPAK" > file2.txt
+   83  ls -ltr
+   84  cat file2.txt 
+   85  git status
+   86  git add file2.txt 
+   87  git status
+   88  git commit
+   89  git status
+   90  clear
+   91  git diff
+   92  git status
+   93  echo "I have changed this file" > file2.txt
+   94  git diff
+   95  git status
+   96  git checkout file2.txt
+   97  git status
+   98  echo "New File" > file3.txt
+   99  clear
+  100  git status
+  101  git add file3.txt 
+  102  git status
+  103  git reset head
+  104  git reset head file3.txt
+  105  clear
+  106  git reset
+  107  git staus
+  108  git status
+  109  echo "I have changed this file" > file2.txt
+  110  git status
+  111  echo "I have also changed this file" > file1.txt
+  112  git status
+  113  git commit -am "All at once"
+  114  git status
+  115  history 
+  116  git status
+  117  git add file3.txt 
+  118  git status
+  119  clear
+  120  echo "New File with new changes" > file3.txt
+  121  git status
+  122  git add file3.txt 
+  123  git status
+  124  clear
+  125  git status
+  126  git commit -am "Added file3.txt"
+  127  git status
+  128  ls -ltr
+  129  git rm file3.txt 
+  130  ls -ltr
+  131  git status
+  132  git reset
+  133  git status
+  134  git checkout file3.txt
+  135  git status
+  136  clear
+  137  ls -ltr
+  138  clear
+  139  reset
+  140  git rm --cached file3.txt
+  141  ls -ltr
+  142  git status
+  143  echo "Ignore this file" > ignore_me.txt
+  144  ls -ltr
+  145  git status
+  146  mkdir ignore_folder
+  147  git status
+  148  echo "Ignore this file" > ignore_folder/ignore_me1.txt
+  149  git status
+  150  vim .gitignore
+  151  git status
+  152  vim .gitignore
+  153  clear
+  154  git status
+  155  history 
+  156  clear
+  157  git log
+  158  clear
+  159  git commit --amend
+  160  git add .
+  161  git status
+  162  git commit -am "Added .gitignore filllll"
+  163  git log
+  164  clear
+  165  git commit --amend
+  166  git log
+  167  clear
+  168  history 
+  169  clear
+  170  git tag -a v5 -m "Adding tag"
+  171  git tag
+  172  git log
+  173  clear
+  174  git log
+  175  git tag -a v4 e64df0ab11f21c2980482b6017c4df2157ed5a1d -m "Adding new tag v4"
+  176  git log
+  177  git tag
+  178  git show v5
+  179  clear
+  180  history 
+  181  clear
+  182  git remote -v
+  183  git remote add origin https://github.com/trainingDemo/dummyrepo.git
+  184  git remote -v
+  185  git remote add new_remote https://github.com/training/dummyrepo.git
+  186  git remote -v
+  187  git push origin master
+  188  git push origin --tags
+  189  ls -ltr
+  190  git pull origin master
+  191  ls -ltr
+  192  git remote -v
+  193  git fetch origin
+  194  clear
+  195  git branch
+  196  git branch -a
+  197  git checkout -b new_branch
+  198  git branch -a
+  199  git branch
+  200  git checkout master
+  201  git branch
+  202  history > history
